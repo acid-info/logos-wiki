@@ -10,6 +10,7 @@
 
 5. Set up database
 
+```
 Database host: database (must be the same as the container name of mariadb)
 
 Database name: (must be the same as MYSQL_DATABASE of docker-compose.yaml)
@@ -17,6 +18,7 @@ Database name: (must be the same as MYSQL_DATABASE of docker-compose.yaml)
 Database username: (must be the same as MYSQL_USER of docker-compose.yaml)
 
 Database password: (must be the same as MYSQL_PASSWORD of docker-compose.yaml)
+```
 
 6. Continue
 
@@ -47,21 +49,13 @@ $wgShowDBErrorBacktrace = true;
 15. Sign in with the admin account
 
 
-## Checking files
+## Check files in docker containers
 
 ```
 docker exec -it --user=root {container id from docker ps} bash
 
 e.g.,
 docker exec -it --user=root 24a696c42c95 bash
-```
-
-## Installing Vim editor inside container
-
-```
-apt-get update
-
-apt-get install vim
 ```
 
 ## Customizing CSS
