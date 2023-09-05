@@ -31,7 +31,7 @@ services:
       # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
       MYSQL_DATABASE: wiki
       MYSQL_USER: admin
-      MYSQL_PASSWORD: 610BnHyDFXz
+      MYSQL_PASSWORD: notARealPassword
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
     volumes:
       - db:/var/lib/mysql
